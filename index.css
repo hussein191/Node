@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4px;
+}
+
+.bodApp{
+    width:100%;
+    display:flex;
+    column-gap: 7px;
+}
+.AllNote{
+    width:30%;
+    padding:12px;
+    border-right: 1px solid rgba(102,102,102,0.2);
+}
+.AddNote{
+    width:100%;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009578;
+    color:#fff;
+    font-size:19px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+.AddNote:hover{
+    background-color: aqua;
+    color:#1d1d1d;
+}
+.BodyNote{
+    width:100%;
+    height:81vh;
+    margin-top:5px;
+    overflow-y: auto;
+    padding:5px;
+}
+.NotE{
+    width:100%;
+    padding:10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border:1px solid rgba(102,102,102,0.2);
+    transition: 0.3s ease;
+}
+.NotE:hover{
+    background-color: rgba(102,102,102,0.1);
+}
+.bodyTitel{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.NotE h2{
+    word-wrap: break-word;
+    width:75%;
+    font-size: 18px;
+    cursor: pointer;
+}
+.bodyIcons{
+    position: relative;
+}
+.bodyIcons p{
+    position: absolute;
+    top:-20px;
+    left:-29px;
+    font-size:18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.bodyIcons p:hover{
+    color:#009578;
+}
+.bodyIcons input {
+    width:18px;
+    height:18px;
+    cursor: pointer;
+}
+
+.NotE p{
+    margin-top: 10px;
+    padding:5px;
+    word-wrap: break-word; 
+    height:30px;
+    overflow: hidden;
+}
+.time{
+    margin-top: 10px;
+    display:flex;
+    justify-content: flex-end;
+    color:#666;
+}
+form{
+    width:68%;
+    margin-top: 20px;
+    padding:10px;
+}
+.titelNote{
+    width:100%;
+    border:1px solid rgba(102,102,102,0.2);
+    border-radius: 6px;
+    padding:7px;
+    height:45px;
+    outline: none;
+    font-size:24px;
+    font-weight: 600;
+    color:#1d1d1d;
+}
+
+textarea{
+    margin-top:20px;
+    width:100%;
+    height:83vh;
+    border:1px solid rgba(102,102,102,0.2);
+    border-radius: 6px;
+    overflow-y: auto;
+    outline: none;
+    padding:10px;
+    transition: 0.3s ease;
+    font-size:16px;
+    line-height: 30px;
+}
+textarea:hover{
+    outline: 1px solid #1d1d1d
+}
+.Footer{
+    width:100%;
+    height:9vh;
+}
+.Footer div{
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    padding:5px;
+}
+.Footer div button{
+    width:32%;
+    height:35px;
+    background-color: #009578;
+    color:#fff;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+.Footer div button:hover{
+    background-color: aqua;
+    color:#1d1d1d
+}
+@media(max-width:1067px){
+    .Footer div button{
+        font-size:10px;
+        font-weight: 300;
+    }
+}
+@media (max-width:920px) {
+    .bodApp{
+        display: flex;
+        flex-direction:column-reverse ;
+    }
+    form,.AllNote{
+        width:100%;
+    }
+    .AllNote{
+        margin-top: 20px;
+    }
+    .Footer div button{
+        font-size:15px;
+        font-weight: 500;
+    }
+}
